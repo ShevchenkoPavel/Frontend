@@ -1,0 +1,51 @@
+html {
+
+}
+
+
+body {
+    margin: 0; /* убираем отступы в браузере */
+}
+
+.content {
+    margin: 69px 68px;
+}
+
+.leftstr, .rightstr {
+    float: left; /* Обтекание справа */ 
+    width: 50%; /* Ширина текстового блока */ 
+}
+
+.rightstr {
+    text-align: right; /* Выравнивание по правому краю */
+}
+
+DIV.content>DIV.largest_img>IMG {
+    padding-top: 72px;
+    padding-bottom: 99px;
+}
+
+.main_content {
+
+    float: left;
+    width: 60%;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    text-align: left;
+}
+
+SECTION.main_content>SECTION.sharebar {
+    float: right;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.footer {
+    background-color: #d9d9d9;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+}
