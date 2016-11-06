@@ -5,47 +5,101 @@ html {
 
 body {
     margin: 0; /* убираем отступы в браузере */
+    min-height: 20px;
+    min-width: 20px;
 }
 
 .content {
-    margin: 69px 68px;
+    width: 1062px;
+    margin: auto;
+    margin-top: 5%;
+    color: gray;
 }
 
-.leftstr, .rightstr {
-    float: left; /* Обтекание справа */ 
-    width: 50%; /* Ширина текстового блока */ 
+.content__header {
+    width: 1062px;
+    margin: auto;
 }
 
-.rightstr {
+.content__leftside {
+    display: inline-block;
+    width: 30%; /* Ширина текстового блока */ 
+}
+
+.content__rightside {
+    width: 70%; 
+    float: right; /* Обтекание слева */
     text-align: right; /* Выравнивание по правому краю */
+    text-transform: uppercase;
 }
 
-DIV.content>DIV.largest_img>IMG {
-    padding-top: 72px;
-    padding-bottom: 99px;
+DIV.content__rightside>NAV>A {
+    margin-left: 10%;
+    font-family:serif;
+    font-size: 110%;
+    color: gray;
+    text-decoration: none;
 }
 
-.main_content {
+DIV.content>DIV.content__largest_img>IMG {
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
 
+.content__main-content {
     float: left;
+    text-align: left;
     width: 60%;
 }
 
-aside {
-    width: 30%;
-    float: right;
-    text-align: left;
+.content__main-content__first-heading {
+    color: #d9d9d9;
+    font-size: 75%;
+    text-transform: uppercase;
 }
 
-SECTION.main_content>SECTION.sharebar {
+.content__aside {
+    width: 25.5%;
+    float: right;
+}
+
+.share {
+    margin-bottom: 15%;
+}
+.share>A {
+    margin-right: 2%;
+}
+
+.content__main-content>.content__main-content__sharebar {
     float: right;
     margin-top: 10%;
     margin-bottom: 10%;
+    text-transform: uppercase;
+    color: gray;
+    text-decoration: none;
 }
+
 
 .footer {
     background-color: #d9d9d9;
-    position: fixed;
+    overflow: hidden; /* Отменяем схлопывающиеся отступы */
     width: 100%;
-    height: 10%;
+    height: 97px;
+}
+
+.footer__leftside>NAV>A {
+    margin: 40px;
+    float: left;
+    margin-right: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.footer__rightside>NAV {
+    float: right;
+    margin: 40px;
+}
+
+.footer__rightside>NAV>A {
+    margin-left: 10px;
 }
