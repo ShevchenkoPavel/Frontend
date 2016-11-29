@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>index-1440</title>
+		<meta charset="UTF-8">
+        <meta name="keywords" content="7bits, Омск, html, css, psd">
+        <meta name="description" content="frontend course 2016">
+        <link rel="stylesheet" href="../vendor/css/normalize.css">
+        <link rel="stylesheet" href="../vendor/css/vendor.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="icon" type="image/ico" href="../images/favicon16.ico" sizes="16x16" />
+        <link rel="icon" type="image/ico" href="../images/favicon32.ico" sizes="32x32" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	</head>
+
+    
+	<body>
+    <header class = "content__header content">
+      <div class = "header__leftside">
+        <a href = "index.html"><img src="../images/logo.png" alt="logo"></a>
+          </div>
+            <div class = "header__menu">
+              <nav>
+                  {% block header %}
+                  {% endblock %}
+              </nav>
+            </div>
+    </header>
+
+    {% block main %}
+    {% endblock %}
+
+        <footer class = "footer">
+            <a href = "index.html"><img class = "footer__logo" src="../images/logo.png" alt="logo"></a>
+            <nav class = "footer__menu">
+
+                {% block footer %}
+                {% endblock %}
+
+            </nav>
+            <div class = "footer__text">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</div>
+            <div class = "copyright">©2015 - Palo Alto. All Rights Reserved. Designed and Developed by<a class = "menu footer__menu footer__team-link" href = "index.html">PixelBuddha Team</a></div>
+            <nav class = "footer__menu">
+                <a class = "header__menu_item footer__share" href = "index.html"><img src="../images/fb.png" alt="facebook_icon"></a>
+                <a class = "header__menu_item footer__share" href = "index.html"><img src="../images/tw.png" alt="twitter_icon"></a>
+                <a class = "header__menu_item footer__share" href = "index.html"><img src="../images/inst.png" alt="instagramm_icon"></a>
+                <a class = "header__menu_item footer__share" href = "index.html"><img src="../images/pinterest.png" alt="pinterest_icon"></a>
+            </nav>
+        </footer>
+        
+	</body>
+</html>

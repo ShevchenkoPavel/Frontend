@@ -1,13 +1,11 @@
 html {
-
 }
 
 body {
-    margin: 0; /* убираем отступы в браузере */
-    padding: 0;
 }
 
 .content {
+    font-family: 'Lato', sans-serif;
     width: 952px;
     margin: auto;
     margin-top: 5%;
@@ -31,7 +29,7 @@ body {
 }
 
 .header__menu_item {
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
     text-decoration: none;
@@ -42,8 +40,8 @@ body {
 
 .header__menu_item:hover {
     padding-bottom: 3px;
-    opacity: 1;
-    border: 5px solid #5c6bc0;
+    color: #333333;
+    border: 2px solid #5c6bc0;
     border-style: none none solid;
     transition: border
 }
@@ -54,7 +52,7 @@ body {
 }
 
 .header__menu_item-current {
- opacity: 0.3;
+    color: #bdbdbd;
 }
 
 .head-img {
@@ -103,12 +101,14 @@ body {
 }
 
 .default-paragraph {
-    font-size: 120%;
+    color:#333333;
+    font-family: 'Lato', sans-serif;
+    font-size: 105%;
+    line-height: 2;
 }
 
 .big-coursive-paragraph {
     font-size: 145%;
-    font-style: italic;
     font-weight: 500;
     color:rgba(0, 0, 0, 0.5);
 }
@@ -119,20 +119,20 @@ body {
     padding-left: 15px;
 }
 
-h1 {
+h2 {
     margin: 0;
     padding: 0;
-    font-family:sans-serif;
-    font-size: 235%;
+    font-family: 'Lato', sans-serif;
+    font-size: 220%;
     font-weight: bolder;
 }
 
-h2 {
+.day {
     margin: 0;
     padding: 0;
     width: 100%;
     color:#bdbdbd;
-    font-size: 100%;
+    font-size: 80%;
 }
 
 .line {
@@ -154,11 +154,11 @@ h2 {
     font-size: 125%;
     background: none;
     border: 1px solid #f7f9fc;
+    box-sizing: border-box;
 }
 
 .read-more:active {
     border: 1px solid #5c6bc0;
-    box-sizing: border-box;
 }
 
 .hash-tags {
@@ -184,18 +184,26 @@ h2 {
     text-decoration: none;
 }
 
+
+#contact-form {
+    padding: 0px 30px;
+}
+
 .contact-form {
+    font-family: 'Lato', sans-serif;
     height:220px;
     border: none;
     margin-bottom: 20px;
     text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.4);
+    background-color: white;
 }
 
 .contact-form__name {
     width: 45%;
     height: 30px;
     font-size: 130%;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .contact-form__mail {
@@ -209,15 +217,18 @@ h2 {
     width: 100%;
     height: 30px;
     font-size: 130%;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .contact-form__message {
     width: 100%;
     height: 90px;
     font-size: 130%;
-    font-family: sans-serif;
-    /*border: none;*/
+}
+
+.submit {
+    padding: 0;
+    margin-top: 60px;
 }
 
 .main__footer {
@@ -226,6 +237,7 @@ h2 {
 }
 
 .footer {
+    font-family: 'Lato',sans-serif;
     margin-top: 120px;
     background-color: #5c6bc0;
     min-width: 100%;
@@ -244,13 +256,12 @@ h2 {
 }
 
 .footer__menu_item:hover {
-    opacity: 1;
+    color: #ffffff;
     text-decoration: underline;
     border-style: none none solid;
 }
 
 .footer__menu_item:active {
-    color:white;
     text-decoration: none;
 }
 
@@ -265,18 +276,25 @@ h2 {
     text-decoration: underline;
 }
 
-.footer__share:hover {
+.footer__share {
+    box-sizing: border-box;
     padding: 10px 6px 2px 6px;
+}
+
+.footer__share:hover {
     background: rgba(0, 0, 0, 0.1);
 }
 
 .footer__text {
+    font-size: 90%;
     color:rgba(255, 255, 255, 0.4);
     margin: 40px 0;
     padding: 50px 17%;
     border: 2px solid rgba(0, 0, 0, 0.06);
+    line-height: 2;
 }
 
 .copyright {
+    font-size: 90%;
     color:rgba(255, 255, 255, 0.4);
 }
