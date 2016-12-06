@@ -3,11 +3,11 @@
 
         {% block header %}
           
-          <a class = "header__menu_item" href = "index.html">home</a>
-          <a class = "header__menu_item" href ="index.html">about</a>
-          <a class = "header__menu_item" href = "index.html">archive</a>
-          <a class = "header__menu_item header__menu_item-current" href = "contacts.html">contact</a>
-          <a class = "header__menu_item" href = "index.html"><img src="../images/search-icon.png" alt="search-icon-black"></a>
+          <a class = "nav-menu__item" href = "index.html">home</a>
+          <a class = "nav-menu__item" href ="index.html">about</a>
+          <a class = "nav-menu__item" href = "index.html">archive</a>
+          <a class = "nav-menu__item nav-menu__item_current" href = "contacts.html">contact</a>
+          <a class = "nav-menu__item" href = "index.html"><img src="../images/search-icon.png" alt="search-icon-black"></a>
                   
         {% endblock %}
 
@@ -16,7 +16,7 @@
     
             <main class = "content">          
                 <section class = "main__demo">
-                        <article class = "demo__text">
+                        <article class = "demo-text">
                         <h2>Contact Us.</h2>
                         <p class = "default-paragraph">Nam in maximus arcu, ac aliquam tellus. Donec vestibulum ipsum nunc, at placerat ante posuere non. Integer at dui a lacus suscipit elementum id non massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eu neque eros. Ut eu quam justo.</p>
                             <div class = "line"></div>
@@ -38,11 +38,11 @@
 
 
         {% block footer %}
-                
-        <a class = "header__menu_item footer__menu footer__menu_item " href = "index.html">home</a>
-        <a class = "header__menu_item footer__menu footer__menu_item" href = "index.html">about</a>
-        <a class = "header__menu_item footer__menu footer__menu_item" href = "index.html">archive</a>
-        <a class = "header__menu_item footer__menu_item header__menu_item-current" href = "contacts.html">contact</a>
-        <a class = "header__menu_item footer__menu footer__menu_item footer__share" href = "index.html"><img src="../images/search-icon-white.png"></a>
+                            
+        <a class = "nav-menu__item footer-menu footer-menu-item " href = "index.html">home</a>
+        <a class = "nav-menu__item footer-menu footer-menu-item" href = "index.html">about</a>
+        <a class = "nav-menu__item footer-menu footer-menu-item" href = "index.html">archive</a>
+        <a class = "nav-menu__item footer-menu-item nav-menu__item_current" href = "contacts.html">contact</a>
+        <a class = "nav-menu__item footer-menu footer-menu-item footer-share" href = "index.html"><img src="../images/search-icon-white.png"></a>
 
         {% endblock %}

@@ -3,11 +3,11 @@
 
         {% block header %}
           
-          <a class = "header__menu_item header__menu_item-current" href = "index.html">home</a>
-          <a class = "header__menu_item" href ="index.html">about</a>
-          <a class = "header__menu_item" href = "index.html">archive</a>
-          <a class = "header__menu_item" href = "contacts.html">contact</a>
-          <a class = "header__menu_item" href = "index.html"><img src="../images/search-icon.png" alt="search-icon-black"></a>
+          <a class = "nav-menu__item nav-menu__item_current" href = "index.html">home</a>
+          <a class = "nav-menu__item" href ="index.html">about</a>
+          <a class = "nav-menu__item" href = "index.html">archive</a>
+          <a class = "nav-menu__item" href = "contacts.html">contact</a>
+          <a class = "nav-menu__item" href = "index.html"><img src="../images/search-icon.png" alt="search-icon-black"></a>
 
         {% endblock %}
 
@@ -17,7 +17,7 @@
             <main class = "content">          
                 <section class = "main__demo">
                         <div class = "i-do-button"><a href="index.html">i do travel</a></div>
-                        <article class = "demo__text">
+                        <article class = "demo-text">
                         <div class = "day">Sep 20</div>
                         <h2>No difference how many peaks you reach is there was no pleasure in the climb.</h2>
                             <div class = "line"></div>
@@ -32,9 +32,9 @@
                 
                 <section class = "main__demo">
                             
-                        <img class = "head-img" src="../images/article2-photo.jpg" alt="mountains-photo" width="952px" height="533">
+                        <img class = "head-img" srcset="../images/article2-photo.jpg 1x, ./images/article2-photo@2x.jpg 2x" alt="mountains"/>
                         <div class = "i-do-button"><a href="index.html">i do observe</a></div>    
-                        <article class = "demo__text">  
+                        <article class = "demo-text">  
                         <div class = "day">Sep 18</div>
                         <h2>You know, I'd rather argue with you, then laugh with anyone else.</h2>
                             <div class = "line"></div>
@@ -51,11 +51,11 @@
                 
                     <section class = "main__demo">
                     <div class = "i-do-button"><a href="index.html">i do reflect</a></div>
-                        <article class = "demo__text">
+                        <article class = "demo-text">
                         <div class = "day">Sep 15</div>
                         <h2>Democracy means simply the bludgeoning of the people by the people for the people.</h2>
                             <div class = "line"></div>
-                            <img class = "article-img-left" src="../images/article3-photo.jpg" alt="sculpture" width="186" height="387">
+                            <img class = "article-img-left" srcset="../images/article3-photo.jpg 1x, ../images/article3-photo@2x.jpg, 2x" alt="sculpture" width="186" height="387">
                         <p class = "default-paragraph">Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.</p>
                         <p class = "default-paragraph">Mauris sem odio, rhoncus eget euismod sed, pellentesque sit amet felis. Praesent dictum eleifend dui et efficitur. Nunc non orci in neque sodales semper. Etiam euismod volutpat lorem, <a href = "index.html">vestibulum malesuada</a> justo aliquet eget. Nunc lacus ante, varius a euismod eu, finibus commodo erat. Curabitur tincidunt sit amet nunc id interdum. Aliquam augue nisi, venenatis vitae ex at, lobortis fringilla nibh. Proin placerat enim vitae egestas eleifend. Aliquamquis orci dignissim, posuere nibh a, eleifend augue. Cras quis metus nec tortor aliquet ullamcorper. Quisque varius porta metus, ut maximus dolor euismod nec. Suspendisse sit amet feugiat turpis.</p>
                         <p class = "big-coursive-paragraph quote">Curabitur ut leo pulvinar, consectetur magna eu, feugiat purus. Morbi hendrerit lectus turpis, a porttitor velit imperdiet id.</p>
@@ -74,10 +74,10 @@
 
         {% block footer %}
                 
-        <a class = "header__menu_item footer__menu_item header__menu_item-current" href = "index.html">home</a>
-        <a class = "header__menu_item footer__menu footer__menu_item" href = "index.html">about</a>
-        <a class = "header__menu_item footer__menu footer__menu_item" href = "index.html">archive</a>
-        <a class = "header__menu_item footer__menu footer__menu_item" href = "contacts.html">contact</a>
-        <a class = "header__menu_item footer__menu footer__menu_item footer__share" href = "index.html"><img src="../images/search-icon-white.png"></a>
+        <a class = "nav-menu__item footer-menu-item nav-menu__item_current" href = "index.html">home</a>
+        <a class = "nav-menu__item footer-menu footer-menu-item" href = "index.html">about</a>
+        <a class = "nav-menu__item footer-menu footer-menu-item" href = "index.html">archive</a>
+        <a class = "nav-menu__item footer-menu footer-menu-item" href = "contacts.html">contact</a>
+        <a class = "nav-menu__item footer-menu footer-menu-item footer-share" href = "index.html"><img src="../images/search-icon-white.png"></a>
 
         {% endblock %}
