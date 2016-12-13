@@ -13,24 +13,6 @@ body {
     margin-top: 80px;
 }
 
-@media (min-width: 1024px) {
-    .content {
-        width: 952px;
-    }
-}
-
-@media (max-width: 480px) {
-    .content {
-        width: 480px;
-    }
-}
-
-@media (max-width: 320px) {
-    .content {
-        width: 320px;
-    }
-}
-
 .header {
     margin-bottom: 60px;
     padding-bottom: 60px;
@@ -61,15 +43,6 @@ body {
     font-size: 110%;
 }
 
-@media (max-width: 320px) {
-    .nav-menu {
-        display: block;
-    }    
-    .nav-menu__item {
-        display: block;
-        width: 100%;
-    }
-}
 
 .nav-menu__item:hover {
     padding-bottom: 3px;
@@ -88,6 +61,10 @@ body {
     color: #bdbdbd;
 }
 
+.burger {
+    display: none;
+}
+
 .head-img {
     width: 100%;
     margin: 0;
@@ -95,45 +72,10 @@ body {
 }
 
 
-@media (max-width: 1024px) {
-    .head-img {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .head-img {
-        width: 480px;
-    }
-}
-
-@media (max-width: 320px) {
-    .head-img {
-        width: 320px;
-    }
-}
-
 .article-img-left {
     float: left;
 }
 
-@media (min-width: 1024px) {
-    .article-img-left {
-        float: left;
-    }
-}
-
-@media (max-width: 480px) {
-    .article-img-left {
-        float: none;
-    }
-}
-
-@media (max-width: 320px) {
-    .article-img-left {
-        float: none;
-    }
-}
 
 .main__demo {
     margin-bottom: 30px;
@@ -153,24 +95,6 @@ body {
     color: white;
     background-color: #5c6bc0;
     padding: 5px;
-}
-
-@media (min-width: 1024px) {
-    .i-do-button>A {
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 320px) {
-    .i-do-button>A {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .i-do-button>A {
-        margin-top: 0;
-    }
 }
 
 .i-do-button:hover {
@@ -247,8 +171,6 @@ h2 {
 }
 
 
-
-
 .hash-tags {
     text-align: right;
     float: right;
@@ -313,30 +235,7 @@ h2 {
 }
 
 
-@media (max-width: 480px) {
-    .contact-form {
-        display: block;
-    }
-    .contact-form__name {
-        margin-bottom: 20px;
-    }
-    .contact-form__subject {
-        margin-bottom: 20px;
-    }
-    .contact-form__mail {
-        float: none;
-        width: 100%;
-    }
-}
 
-@media (max-width: 320px) {
-    .contact-form {
-        display: block;
-    }    
-    .contact-form__name, ..contact-form__mail, ..contact-form__subject, .contact-form__message {
-        display: block;
-    }
-}
 
 .submit {
     padding: 0;
@@ -409,4 +308,135 @@ h2 {
 .copyright {
     font-size: 90%;
     color:rgba(255, 255, 255, 0.4);
+}
+
+
+
+@media (min-width: 1024px) {
+    .i-do-button>A {
+        margin-top: 20px;
+    }
+    .article-img-left {
+        float: left;
+    }
+    .head-img {
+        width: 100%;
+    }
+    .content {
+        width: 952px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu__item {
+        display: none;
+    }
+    .header-leftside>A {
+        padding-left: 5%;
+    }
+    .burger {
+        display: block;
+        padding-right: 5%;
+    }
+    .head-img {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        margin: auto;
+    }
+    .i-do-button>A {
+        margin-top: 0;
+    }
+    .article-img-left {
+        float: none;
+    }
+    
+    
+    .read-more {
+        width: 100%;
+        display: block;
+    }
+    .hash-tags {
+        text-align: left;
+        float: left;
+        display: block;
+        width: 100%;
+    }
+    .hash-tags>A {
+        margin-left: 10px;
+        font-size: 120%;
+    }
+    
+    
+    .contact-form {
+        display: block;
+    }
+    .contact-form__name {
+        margin-bottom: 20px;
+    }
+    .contact-form__subject {
+        margin-bottom: 20px;
+    }
+    .contact-form__mail {
+        float: none;
+        width: 100%;
+    }
+    
+    
+    .footer-menu-item {
+        display: inline-block;
+    }
+    .footer-share {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 320px) {
+    .article-img-left {
+        float: none;
+    }
+    .i-do-button>A {
+        margin-top: 0;
+    }
+    .head-img {
+        width: 320px;
+    }
+    .nav-menu {
+    }    
+    .nav-menu__item {
+        display: none;
+        width: 100%;
+    }
+    .burger {
+        display: block;
+    }
+    .content {
+        width: 100%;
+    }
+    
+    .hash-tags>A {
+        float: center;
+        display: block;
+        margin-left: 10px;
+        font-size: 120%;
+    }
+    
+    .footer {
+        height: auto;
+    }
+    .contact-form {
+        display: block;
+    }    
+    .contact-form__name, ..contact-form__mail, ..contact-form__subject, .contact-form__message {
+        display: block;
+    }
+    
+    .footer-menu-item {
+        display: block;
+    }
+    .footer-share {
+        display: block;
+    }
+    
 }
