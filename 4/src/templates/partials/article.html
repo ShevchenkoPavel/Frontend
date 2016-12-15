@@ -11,7 +11,11 @@
             <p class = "default-paragraph">{{item.mainText}}</p>
             <div class = "main__footer">
                 <div class = "read-more"><a class = "read-more" href="index.html">{{item.buttonBottom}}</a></div>
-                <div class = "hashTags"><a href="index.html">#explorer</a>   <a href="index.html">#peak</a>   <a href="index.html">#yosemite</a></div>
+                
+                {% for item in item.hashTagsArr %}
+                <div class = "hashTags"><a class = "hashTags" href="index.html">{{item}}</a></div>
+                {% endfor %}
+                
             </div>
         </article>
     </section>
