@@ -1,14 +1,18 @@
+{% for item in articles %}
+
     <section class = "main__demo">
-        <img src="{{picture}}" class = "head-img"/>
-        <div class = "i-do-button"><a href="index.html">{{buttonRight}}</a></div>
+        <img src="{{item.picture}}" class = "head-img"/>
+        <div class = "i-do-button"><a href="index.html">{{item.buttonRight}}</a></div>
         <article class = "demo-text">
-            <div class = "day">{{date}}</div>
-            <h2>{{headerText}}</h2>
+            <div class = "day">{{item.date}}</div>
+            <h2>{{item.headerText}}</h2>
             <div class = "line"></div>
-            <p class = "default-paragraph">{{mainText}}</p>
+            <img src="{{item.pictureLeft}}" class = "article-img-left"/>
+            <p class = "default-paragraph">{{item.mainText}}</p>
             <div class = "main__footer">
-                <div class = "read-more"><a class = "read-more" href="index.html">{{buttonBottom}}</a></div>
+                <div class = "read-more"><a class = "read-more" href="index.html">{{item.buttonBottom}}</a></div>
                 <div class = "hashTags"><a href="index.html">#explorer</a>   <a href="index.html">#peak</a>   <a href="index.html">#yosemite</a></div>
             </div>
         </article>
     </section>
+{% endfor %}
