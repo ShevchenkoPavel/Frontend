@@ -265,10 +265,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-.about-form-item {
-    
-}
-
 .radio-button {
     
 }
@@ -300,7 +296,7 @@ h2 {
     font-family: 'Lato', serif;
     margin-top: 120px;
     background-color: #5c6bc0;
-    height: 530px;
+    
     text-align: center
 }
 
@@ -312,6 +308,7 @@ h2 {
 .footer-menu {
     color: white;
     font-size: 110%;
+    padding-bottom: 30px;
 }
 
 .footer-menu-item:hover {
@@ -452,10 +449,11 @@ h2 {
     }
     .nav-menu {
     }    
-    .nav-menu__item {
-        display: none;
-        width: 100%;
+    
+    .header-rightside {
+        width: 10%;
     }
+    
     .burger {
         display: block;
     }
