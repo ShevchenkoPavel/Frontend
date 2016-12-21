@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+
+        {% block header %}
+          
+          <a class = "burger" href = "index.html"><img src = "./images/burger.png" alt="burgermenu"></a>
+          <a class = "nav-menu__item" href = "index.html">home</a>
+          <a class = "nav-menu__item nav-menu__item_current" href ="about.html">about</a>
+          <a class = "nav-menu__item" href = "index.html">archive</a>
+          <a class = "nav-menu__item" href = "contacts.html">contact</a>
+          <a class = "nav-menu__item" href = "index.html"><img src="./images/search-icon.png" alt="search-icon-black"></a>
+                  
+        {% endblock %}
+
+
+        {% block main %}
+    
+            <main class = "content">          
+                <section class = "main__demo">
+                        <article class = "demo-text">
+                        <h2>About</h2>
+                            <div class = "line"></div>
+                            <form id = "about-form" class = "about-form">
+                                <div about-form-item></div>
+                                <p>First name <input class = "about-form about-form__name" form = "about-form" type="text" name="first-name"></p>
+                                <p>Last name <input class = "about-form about-form__name" form = "about-form" type="text" name="last-name"></p>
+                                <p>E-mail <input class = "about-form about-form__mail" form = "about-form" type="email" name="mail"></p>
+                                <p>Phone <input class = "about-form about-form__phone" form = "about-form" type="text" name="phone" placeholder="+_ (___) ____-__-__" ></p>
+                                
+                                <p>Date of birth <input class = "about-form about-form__date" form = "about-form" type="text" id="datepicker" name = "date" placeholder="DD/MM/YYYY"></p>
+                                
+                                <p>Sex</p>
+                                <p class = "radio-button"><input form = "about-form" type = "radio" name = "gender" value = "male" checked> Male</p>
+                                <p><input form = "about-form" type = "radio" name = "gender" value = "female"> Female</p>
+                                
+                            </form>
+                            <div class = "main__footer">
+                                <button type="submit"><a class = "submit-button" href="index.html">submit</a></button>
+                            </div>
+                        </article>
+                </section>
+                
+            </main>
+
+       {% endblock %}
+
+
+        {% block footer %}
+                            
+        <a class = "nav-menu__item footer-menu footer-menu-item " href = "index.html">home</a>
+        <a class = "nav-menu__item footer-menu-item nav-menu__item_current" href = "about.html">about</a>
+        <a class = "nav-menu__item footer-menu footer-menu-item" href = "index.html">archive</a>
+        <a class = "nav-menu__item footer-menu footer-menu-item" href = "contacts.html">contact</a>
+        <a class = "nav-menu__item footer-menu footer-menu-item footer-share" href = "index.html"><img src="./images/search-icon-white.png"></a>
+
+        {% endblock %}
