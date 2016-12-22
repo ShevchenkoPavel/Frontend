@@ -65,7 +65,9 @@ gulp.task('images', function () {
 
 gulp.task('scripts', function () {
   return gulp.src(path.scripts)
+	.pipe(concat('script.js'))
     .pipe(gulp.dest(path.dist.scripts));
+	
 });
 
 gulp.task('mock', function () {

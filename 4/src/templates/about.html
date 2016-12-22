@@ -20,26 +20,28 @@
                         <article class = "demo-text">
                         <h2>About</h2>
                             <div class = "line"></div>
-                            <form id = "about-form">
+							<div class = "about-form-inside">
+                            <form id = "about-form" class = "about-form">
                                 
-                                <p class = "center">First Name <input class = "about-form about-form__name" form = "about-form" type="text" id = "first-name" name="first-name" placeholder="Your first name" pattern = "\D [^0-9]"></p>
+                                <p>First Name <input class = "about-form about-form__name" form = "about-form" type="text" id = "first-name" name="first-name" placeholder="Your first name" pattern = "^[a-zA-Z]+$"></p>
                                 
-                                <p class = "center">Last Name <input class = "about-form about-form__name" form = "about-form" type="text" id = "last-name" name="last-name" placeholder="Your last name" pattern = "^[a-zA-Z]+$"></p>
+                                <p>Last Name <input class = "about-form about-form__name" form = "about-form" type="text" id = "lastName" name="lastName" placeholder="Your last name" pattern = "^[a-zA-Z]+$"></p>
                                 
-                                <p class = "center">E-mail <input class = "about-form about-form__mail" form = "about-form" type="email" id = "mail" name="mail" placeholder="Your mail" pattern = "/^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i"></p>
+                                <p>E-mail <input class = "about-form about-form__mail" form = "about-form" type="email" id = "mail" name="mail" placeholder="Your mail" pattern = "/^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i"></p>
                                 
-                                <p class = "center">Phone <input class = "about-form about-form__phone" form = "about-form" type="text" name="phone" id = "phone" placeholder="+_ (___) ____-__-__" ></p>
+                                <p>Phone <input class = "about-form about-form__phone" form = "about-form" type="text" name="phone" id = "phone" placeholder="+7 (___) ____-__-__" ></p>
                                 
-                                <p class = "center">Date of Birth <input class = "about-form about-form__date" form = "about-form" type="text" id="datepicker" name = "date" placeholder="DD/MM/YYYY"></p>
+                                <p>Date of Birth <input class = "about-form about-form__date" form = "about-form" type="text" id="datepicker" name = "date" placeholder="DD/MM/YYYY"></p>
                                 
-                                <p class = "center">Sex</p>
-                                <p class = "center radio-button"><input form = "about-form" type = "radio" name = "gender" value = "male" checked> Male</p>
-                                <p class = "radio-button center"><input form = "about-form" type = "radio" name = "gender" value = "female"> Female</p>
+                                <p>Sex</p>
+                                <p class = "radio-button"><input form = "about-form" type = "radio" name = "gender" value = "male" checked> Male</p>
+                                <p class = "radio-button"><input form = "about-form" type = "radio" name = "gender" value = "female"> Female</p>
                                 
                             </form>
-                            <div class = "main__footer center">
+                            <div class = "main__footer">
                                 <button class = "read-more submit" type="submit" id = "submit" name = "submit" value="submit"><a class = "submit-button" href="about.html">submit</a></button>
                             </div>
+							</div>
                         </article>
                 </section>
                 

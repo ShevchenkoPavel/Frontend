@@ -17,7 +17,8 @@ $(document).ready(function () {
   });
 
 });
-    
+
+
 $(document).ready(function(){
   var pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i;
   var mail = $('#mail');
@@ -39,10 +40,16 @@ $(document).ready(function(){
 				$('#submit').attr('disabled', true);
 			}
 	});
-      
+    
+    
+    
+    
   $( function() {
   $( "#datepicker" ).datepicker();
   } );
-      
-});
+	
 
+	  Inputmask({"mask": "(999) 999-9999"}).mask("#phone");
+  	
+    
+});

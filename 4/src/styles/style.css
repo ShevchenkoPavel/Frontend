@@ -236,6 +236,11 @@ h2 {
 
 
 
+.about-form-inside  {
+	margin: 0 40%;
+	font-size: 130%;
+}
+
 #about-form {
 }
 
@@ -243,6 +248,7 @@ h2 {
     display: block;
     border: none;
     outline-color: #5c6bc0;
+	font-weight: 130%;
     
 }
 
@@ -251,25 +257,21 @@ h2 {
 }
 
 .about-form__name {
-    width: 45%;
     height: 30px;
     margin-bottom: 40px;
 }
 
 .about-form__mail {
-    width: 45%;
     height: 30px;
     margin-bottom: 40px;
 }
 
 .about-form__phone {
-    width: 45%;
     height: 30px;
     margin-bottom: 40px;
 }
 
 .about-form__date {
-    width: 45%;
     height: 30px;
     margin-bottom: 40px;
 }
@@ -293,15 +295,6 @@ h2 {
     opacity: 0.9;
 }
 
-.center {
-    float:none;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-    font-size: 130%;
-    font-weight: bold;
-}
 
 .descr {
     
