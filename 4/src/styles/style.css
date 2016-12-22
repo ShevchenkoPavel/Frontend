@@ -242,43 +242,63 @@ h2 {
 .about-form {
     display: block;
     border: none;
+    outline-color: #5c6bc0;
+    
+}
+
+.about-form:focus {
+    
 }
 
 .about-form__name {
     width: 45%;
     height: 30px;
-    font-size: 130%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .about-form__mail {
     width: 45%;
     height: 30px;
-    font-size: 130%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .about-form__phone {
     width: 45%;
     height: 30px;
-    font-size: 130%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.radio-button {
-    
+.about-form__date {
+    width: 45%;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.radio-button {   
 }
 
 .submit-button {
-    width: 100px;
+    padding: 10px 25px;
     display: block;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
     text-decoration: none;
     color: white;
     background-color: #5c6bc0;
 }
 
+.center {
+    float:none;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 130%;
+}
+
+.descr {
+    
+}
 
 
 
