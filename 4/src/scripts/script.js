@@ -43,13 +43,60 @@ $(document).ready(function(){
     
     
     
-    
   $( function() {
   $( "#datepicker" ).datepicker();
   } );
 	
 
-	  Inputmask({"mask": "(999) 999-9999"}).mask("#phone");
+	  Inputmask({"mask": "+7 (999) 999-9999"}).mask("#phone");
   	
     
+});
+
+
+$(document).ready(function(){
+  var pattern = /^[a-zA-Z]+$/i;
+  var mail = $('#lastName');
+	
+	mail.blur(function(){
+		if(mail.val() != ''){
+				if(mail.val().search(pattern) == 0){
+					$('#valid').text('Подходит');
+					$('#submit').attr('disabled', false);
+					mail.removeClass('error').addClass('ok');
+				}else{
+					$('#valid').text('Не подходит');
+					$('#submit').attr('disabled', true);
+					mail.addClass('ok');
+				}
+			}else{
+				$('#valid').text('Поле e-mail не должно быть пустым!');
+				mail.addClass('error');
+				$('#submit').attr('disabled', true);
+			}
+	});
+});
+
+
+$(document).ready(function(){
+  var pattern = /^[a-zA-Z]+$/i;
+  var mail = $('#firstName');
+	
+	mail.blur(function(){
+		if(mail.val() != ''){
+				if(mail.val().search(pattern) == 0){
+					$('#valid').text('Подходит');
+					$('#submit').attr('disabled', false);
+					mail.removeClass('error').addClass('ok');
+				}else{
+					$('#valid').text('Не подходит');
+					$('#submit').attr('disabled', true);
+					mail.addClass('ok');
+				}
+			}else{
+				$('#valid').text('Поле e-mail не должно быть пустым!');
+				mail.addClass('error');
+				$('#submit').attr('disabled', true);
+			}
+	});
 });

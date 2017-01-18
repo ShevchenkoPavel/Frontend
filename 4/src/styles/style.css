@@ -164,6 +164,7 @@ h2 {
     background: none;
     border: 1px solid #f7f9fc;
     box-sizing: border-box;
+	padding: 0 40px;
 }
 
 .read-more:active {
