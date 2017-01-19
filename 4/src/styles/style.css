@@ -164,7 +164,10 @@ h2 {
     background: none;
     border: 1px solid #f7f9fc;
     box-sizing: border-box;
-	padding: 0 40px;
+}
+
+.read-more>A {
+	padding: 10px 30px;
 }
 
 .read-more:active {
@@ -250,6 +253,8 @@ h2 {
     border: none;
     outline-color: #5c6bc0;
 	font-weight: 130%;
+	padding: 20px;
+	margin-top: 5px;
     
 }
 
@@ -303,17 +308,16 @@ h2 {
 
 .ok {
     outline-color: #5c6bc0;
-    border: 1px solid #5c6bc0;
+    border: 0px solid #5c6bc0;
 }
 
 .error {   
-    border: 2px solid red;
+    border: 1px solid red;
 }
 
 
 .submit {
     padding: 0;
-    margin-top: 60px;
 }
 
 .main__footer {
@@ -425,7 +429,6 @@ h2 {
     .article-img-left {
         float: none;
     }
-    
     
     .read-more {
         width: 100%;
