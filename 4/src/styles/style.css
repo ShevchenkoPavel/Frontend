@@ -95,13 +95,17 @@ body {
     color: white;
     background-color: #5c6bc0;
     padding: 5px;
+	margin-right: -10px;
 }
 
-.i-do-button:hover {
+.i-do-button>A:hover {
+	width: 100px;
+	height: 40px;
     opacity: 0.8;
+	padding-top: 25px;
 }
 
-.i-do-button:active {
+.i-do-button>A:active {
     opacity: 1;
 }
 
@@ -209,6 +213,11 @@ h2 {
     margin-bottom: 20px;
     text-transform: capitalize;
     color: rgba(0, 0, 0, 0.4);
+	outline-color: azure;
+}
+
+.contact-form:focus {
+    background-color: azure;
 }
 
 .contact-form__name {
@@ -251,15 +260,14 @@ h2 {
 .about-form {
     display: block;
     border: none;
-    outline-color: #5c6bc0;
+    outline-color: white;
 	font-weight: 130%;
 	padding: 20px;
 	margin-top: 5px;
-    
 }
 
 .about-form:focus {
-    
+    background-color: azure;
 }
 
 .about-form__name {
@@ -302,10 +310,6 @@ h2 {
 }
 
 
-.descr {
-    
-}
-
 .ok {
     outline-color: #5c6bc0;
     border: 0px solid #5c6bc0;
@@ -318,11 +322,17 @@ h2 {
 
 .submit {
     padding: 0;
+	margin-top: 30px;
 }
 
 .main__footer {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.main__footer_little-margin {
+	margin-top: -30px;
+	margin-bottom: 50px;
 }
 
 .footer {
