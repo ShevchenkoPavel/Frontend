@@ -19,19 +19,20 @@ $(document).ready(function () {
 });
 
 
-function burgerr() {
-
+function hamburger() {
 	if ( $(window).width() >= 1024) {
 		$( ".burger" ).hide();
 		$( ".cross" ).hide();
 		$( ".burger-menu" ).hide();
 	}
-	else { ( ".burger" ).show; }
+	else { $( ".burger" ).show(); }
 }
 
-$(document).ready(burgerr);
-$(window).resize(burgerr);
-$(window).load(burgerr);
+$(document).ready(hamburger);
+$(window).resize(hamburger);
+$(window).load(hamburger);
+
+$( ".cross" ).hide();
 
 $( ".burger" ).click(function() {
 $( ".burger-menu" ).slideToggle( "slow", function() {
@@ -50,7 +51,7 @@ $( ".burger" ).show();
 
 $(document).ready(function(){
   var pattern = /^[a-zA-Z]+$/i;
-  var mail = $('#lastName');
+  var mail = $('#firstName');
 	
 	mail.blur(function(){
 		if(mail.val() != ''){
@@ -74,7 +75,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   var pattern = /^[a-zA-Z]+$/i;
-  var mail = $('#firstName');
+  var mail = $('#lastName');
 	
 	mail.blur(function(){
 		if(mail.val() != ''){
