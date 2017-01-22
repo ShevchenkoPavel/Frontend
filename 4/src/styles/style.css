@@ -61,8 +61,38 @@ body {
     color: #bdbdbd;
 }
 
-.burger {
-    display: none;
+.hid {
+	display: none;
+}
+
+sho {
+	display: block;
+}
+
+.burger{
+	background: none;
+	border: none;
+	outline: none;
+}
+.cross{
+  background: none;
+  border: none;
+  outline: none;
+}
+.burger-menu{display: none; z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#131313;  position:absolute; text-align:center;}
+.burger-menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.burger-menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.burger-menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.burger-menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.burger-menu ul li a:hover {  color: #fff; text-decoration:none;}
+.burger-menu a{text-decoration:none; color:white; text-transform: uppercase;}
+.burger-menu a:hover{text-decoration:none; color:white;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
 }
 
 .head-img {
@@ -166,7 +196,7 @@ h2 {
     font-weight: bold;
     font-size: 125%;
     background: none;
-    border: 1px solid #f7f9fc;
+    border: 1px solid white;
     box-sizing: border-box;
 }
 
@@ -401,6 +431,7 @@ h2 {
 
 
 @media (min-width: 1024px) {
+	
     .i-do-button>A {
         margin-top: 20px;
     }
@@ -423,7 +454,6 @@ h2 {
         padding-left: 5%;
     }
     .burger {
-        display: block;
         padding-right: 5%;
     }
     .head-img {
@@ -480,6 +510,11 @@ h2 {
 }
 
 @media (max-width: 320px) {
+	.burger {
+        display: block;
+		padding-right: 5%
+	}
+	
     .article-img-left {
         float: none;
     }
@@ -496,9 +531,6 @@ h2 {
         width: 10%;
     }
     
-    .burger {
-        display: block;
-    }
     .content {
         width: 100%;
     }

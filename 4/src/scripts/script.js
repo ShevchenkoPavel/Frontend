@@ -15,9 +15,37 @@ $(document).ready(function () {
         });        
     }
   });
-
+	
 });
 
+
+function burgerr() {
+
+	if ( $(window).width() >= 1024) {
+		$( ".burger" ).hide();
+		$( ".cross" ).hide();
+		$( ".burger-menu" ).hide();
+	}
+	else { ( ".burger" ).show; }
+}
+
+$(document).ready(burgerr);
+$(window).resize(burgerr);
+$(window).load(burgerr);
+
+$( ".burger" ).click(function() {
+$( ".burger-menu" ).slideToggle( "slow", function() {
+$( ".burger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".burger-menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".burger" ).show();
+});
+});
 
 
 $(document).ready(function(){
