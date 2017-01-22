@@ -62,7 +62,7 @@ $(document).ready(function(){
 				}else{
 					$('#valid').text('Не подходит');
 					$('#submit').attr('disabled', true);
-					mail.addClass('ok');
+					mail.addClass('error');
 				}
 			}else{
 				$('#valid').text('Поле e-mail не должно быть пустым!');
@@ -86,7 +86,7 @@ $(document).ready(function(){
 				}else{
 					$('#valid').text('Не подходит');
 					$('#submit').attr('disabled', true);
-					mail.addClass('ok');
+					mail.addClass('error');
 				}
 			}else{
 				$('#valid').text('Поле e-mail не должно быть пустым!');
@@ -110,7 +110,7 @@ $(document).ready(function(){
 				}else{
 					$('#valid').text('Не подходит');
 					$('#submit').attr('disabled', true);
-					mail.addClass('ok');
+					mail.addClass('error');
 				}
 			}else{
 				$('#valid').text('Поле e-mail не должно быть пустым!');
