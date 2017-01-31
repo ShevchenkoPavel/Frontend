@@ -13,14 +13,17 @@ var path = {
     html: 'src/templates/*.html',
 	partials: 'src/templates/partials/*.html',
 	vendor: {
-	  css: 'src/vendor/css/*.css'
+	  css: 'src/vendor/css/*.css',
+	  scripts: 'src/vendor/scripts/*.js'
 	},
     dist: {
 	  images: 'dist/images/',
       css:  'dist/styles/',
 	  scripts: 'dist/scripts/',
 	  mock: 'dist/mockapi/',
-	  vendor: 'dist/vendor/css/',
+	  vendor: { css: 'dist/vendor/css/',
+	  			scripts: 'dist/vendor/scripts/',
+	},
       html: 'dist/',
 	  partials: 'dist/partials/' 
     }
@@ -78,17 +81,25 @@ gulp.task('mock', function () {
 gulp.task('vendor-css', function () {
   return gulp.src(path.vendor.css)
     .pipe(concat('vendor.css'))
-    .pipe(gulp.dest(path.dist.vendor));
+    .pipe(gulp.dest(path.dist.vendor.css));
 });
+
+
+gulp.task('vendor-scripts', function () {
+  return gulp.src(path.vendor.scripts)
+    .pipe(concat('vendor.scripts'))
+    .pipe(gulp.dest(path.dist.vendor.scripts));
+});
+
 
 gulp.task('vendor-css-min', function () {
   return gulp.src(path.vendor.css)
     .pipe(concat('vendor.css'))
     .pipe(cssmin())
-    .pipe(gulp.dest(path.dist.vendor));
+    .pipe(gulp.dest(path.dist.vendor.css));
 });
 
-gulp.task('build', ['html', 'partials', 'css', 'vendor-css', 'images', 'scripts', 'mock']);
+gulp.task('build', ['html', 'partials', 'css', 'vendor-css', 'vendor-scripts', 'images', 'scripts', 'mock']);
 gulp.task('prod', ['html', 'partials', 'css-min', 'vendor-css-min', 'images', 'scripts', 'mock']);
 
 gulp.task('watch', function () {
@@ -96,6 +107,7 @@ gulp.task('watch', function () {
   gulp.watch(path.html, ['html']);
   gulp.watch(path.partials, ['partials']);
   gulp.watch(path.vendor.css, ['vendor-css']);
+  gulp.watch(path.vendor.scripts, ['vendor-scripts']);
   gulp.watch(path.img, ['images']);
   gulp.watch(path.scripts, ['scripts']);
   gulp.watch(path.scripts, ['mock']);
