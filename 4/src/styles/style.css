@@ -203,12 +203,17 @@ h2 {
     box-sizing: border-box;
 }
 
-.read-more>A {
+.read-more a {
 	padding: 10px 30px;
 }
 
-.read-more:active {
-    border: 1px solid #5c6bc0;
+.read-more a:hover {
+    border: 1px solid azure;
+	opacity: 0.8;
+}
+
+.read-more a:active {
+       border: 1px solid #5c6bc0;
 }
 
 
