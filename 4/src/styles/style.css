@@ -283,7 +283,7 @@ h2 {
 
 
 .about-form-inside  {
-	margin: 0 40%;
+	margin: 0 30%;
 	font-size: 130%;
 }
 
@@ -329,6 +329,7 @@ h2 {
 }
 
 .submit-button {
+	margin-left: 100px;
     padding: 10px 25px;
     display: block;
     text-transform: uppercase;
@@ -510,7 +511,13 @@ h2 {
         width: 100%;
     }
     
+	
+	.about-form-inside  {
+	margin: 0 10%;
+	font-size: 130%;
+	}
     
+	
     .footer-menu-item {
         display: inline-block;
     }
@@ -518,6 +525,29 @@ h2 {
         display: inline-block;
     }
 }
+
+
+@media (max-width: 480px) {
+	
+	
+	.footer-menu-item {
+        display: block;
+    }
+    .footer-share {
+        display: block;
+    }
+	
+	.about-form-inside {
+	margin: 0 0;
+	font-size: 130%;
+	}
+	
+	.footer-menu {	
+    padding-bottom: 5px;
+	}
+	
+}
+
 
 @media (max-width: 320px) {
 	.burger {
@@ -561,6 +591,7 @@ h2 {
     .contact-form__name, ..contact-form__mail, ..contact-form__subject, .contact-form__message {
         display: block;
     }
+	
     
     .footer-menu-item {
         display: block;
