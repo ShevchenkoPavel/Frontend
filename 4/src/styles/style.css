@@ -79,14 +79,14 @@ showobj {
   border: none;
   outline: none;
 }
-.burger-menu{display: none; z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#131313;  position:absolute; text-align:center;}
+.burger-menu{display: none; z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background: azure;  position:absolute; text-align:center;}
 .burger-menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-.burger-menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
-.burger-menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.burger-menu li {display: block;   padding:15px 0 15px 0; border-bottom:beige 1px solid;}
+.burger-menu li:hover{display: block;    background: #5c6bc0; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
 .burger-menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
 .burger-menu ul li a:hover {  color: #fff; text-decoration:none;}
-.burger-menu a{text-decoration:none; color:white; text-transform: uppercase;}
-.burger-menu a:hover{text-decoration:none; color:white;}
+.burger-menu a{text-decoration:none; color:#181818; text-transform: uppercase;}
+.burger-menu a:hover{text-decoration:none; color:#181818;}
 
 .glyphicon-home{
   color:white; 
@@ -124,15 +124,18 @@ showobj {
     text-decoration: none;
     color: white;
     background-color: #5c6bc0;
-    padding: 5px;
+    padding: 10px;
 	margin-right: -10px;
+	font-size: 15px;
+	
+	
+	-webkit-transition: 1s;
+	transition: 1s;
 }
 
 .i-do-button>A:hover {
-	width: 100px;
-	height: 40px;
+	transform: scale(1.25);
     opacity: 0.8;
-	padding-top: 25px;
 }
 
 .i-do-button>A:active {
@@ -464,8 +467,15 @@ h2 {
         margin: auto;
     }
     .i-do-button>A {
+		margin-right: 0;
         margin-top: 0;
     }
+	
+	.i-do-button>A:hover {
+		transform: scale(1.15);
+    }
+	
+	
     .article-img-left {
         float: none;
     }
