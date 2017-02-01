@@ -333,6 +333,14 @@ h2 {
     color: #bdbdbd;
 }
 
+.hint {
+	color: red;
+}
+
+#firsthint {
+	display: none;
+}
+
 .submit-button {
 	margin-left: 100px;
     padding: 10px 25px;

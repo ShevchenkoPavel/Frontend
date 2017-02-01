@@ -87,7 +87,7 @@ gulp.task('vendor-css', function () {
 
 gulp.task('vendor-scripts', function () {
   return gulp.src(path.vendor.scripts)
-    .pipe(concat('vendor.scripts'))
+    .pipe(concat('vendor.js'))
     .pipe(gulp.dest(path.dist.vendor.scripts));
 });
 
