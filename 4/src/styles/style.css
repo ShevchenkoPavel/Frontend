@@ -310,22 +310,19 @@ h2 {
 
 .about-form__name {
     height: 30px;
-    margin-bottom: 40px;
+	margin-bottom: 0;
 }
 
 .about-form__mail {
     height: 30px;
-    margin-bottom: 40px;
 }
 
 .about-form__phone {
     height: 30px;
-    margin-bottom: 40px;
 }
 
 .about-form__date {
     height: 30px;
-    margin-bottom: 40px;
 }
 
 .radio-button {
@@ -335,10 +332,15 @@ h2 {
 
 .hint {
 	color: red;
+	font-size: 70%;
 }
 
-#firsthint {
-	display: none;
+#namefirsthint {
+	
+}
+
+#nameemptyhint {
+	
 }
 
 .submit-button {
@@ -350,6 +352,7 @@ h2 {
     text-decoration: none;
     color: white;
     background-color: #5c6bc0;
+	border: 1px solid white;
 }
 
 .submit-button:hover {

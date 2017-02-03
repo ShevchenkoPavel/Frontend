@@ -26,12 +26,17 @@
                             <form id = "about-form" class = "about-form">
                                 
                                 <p>First Name <input class = "about-form about-form__name" form = "about-form" type="text" id = "firstName" name="firstName" placeholder="Your first name" pattern = "^[a-zA-Z]+$"></p>
-                                <p class ="hint" id = "firsthint">hint_1</p>
+                                <p class ="hint" id = "namefirsthint">Поле должно содержать только латинские буквы</p>
+								<p class ="hint" id = "nameemptyhint">Поле обязательно к заполнению</p>
 								
                                 <p>Last Name <input class = "about-form about-form__name" form = "about-form" type="text" id = "lastName" name="lastName" placeholder="Your last name" pattern = "^[a-zA-Z]+$"></p>
-                                
+                                <p class ="hint" id = "lastnamefirsthint">Поле должно содержать только латинские буквы</p>
+								<p class ="hint" id = "lastnameemptyhint">Поле обязательно к заполнению</p>
+								
                                 <p>E-mail <input class = "about-form about-form__mail" form = "about-form" type="email" id = "mail" name="mail" placeholder="Your mail" pattern = "/^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i"></p>
-                                
+                                <p class ="hint" id = "mailfirsthint">Поле должно содержать адрес эл. почты</p>
+								<p class ="hint" id = "mailemptyhint">Поле обязательно к заполнению</p>
+								
                                 <p>Phone <input class = "about-form about-form__phone" form = "about-form" type="text" name="phone" id = "phone" placeholder="+7 (___) ____-__-__" ></p>
                                 
                                 <p>Date of Birth <input class = "about-form about-form__date" form = "about-form" type="text" id="datepicker" name = "date" placeholder="DD/MM/YYYY"></p>
