@@ -20,7 +20,7 @@ $(document).ready(function () {
 
 
 function hamburger() {
-	if ( $(window).width() >= 1024) {
+	if ( $(window).width() >= 768) {
 		$( ".burger" ).hide();
 		$( ".cross" ).hide();
 		$( ".burger-menu" ).hide();
